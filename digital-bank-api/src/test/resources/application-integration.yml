@@ -1,0 +1,15 @@
+spring:
+  flyway:
+    enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      jakarta.persistence.lock.timeout: "5000"
+  datasource:
+    driver-class-name: org.postgresql.Driver
+
+logging:
+  level:
+    com.compass.bank.test.digitalbankapi.infrastructure.notification: WARN
+    org.hibernate.SQL: WARN
